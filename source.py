@@ -35,7 +35,7 @@ class FileManager:
     
     def restore(self, name):
         tmp = []
-        min_time = 100000000000
+        min_time = float("inf")
         for r in self.remove_list:
             if r.name == name:
                 tmp.append(r)
