@@ -24,7 +24,6 @@ class FileManager:
             self.create_dir(self.trash, '.')
             self.remove_list.append(Remove(name, address))
             shutil.move(address + '/' + name, "./trash/" + str(self.remove_list[-1].time) + name)
-        # os.remove(address + '/' + name)
     
     def find(self, name, address):
         result = []
